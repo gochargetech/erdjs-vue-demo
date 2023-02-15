@@ -13,9 +13,10 @@ app.use(router);
 
 // erdjs
 const erdjs = erdjsVue({
-  loadCss: false,
-  chain: 'devnet'
+  chain: 'devnet',
+}, {
+  walletConnectV2ProjectId: import.meta.env.VITE_VUE_APP_WC_PROJECT_ID || ''
 });
-app.use(erdjs)
+app.use(erdjs);
 
 app.mount('#app')

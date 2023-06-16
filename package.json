@@ -1,7 +1,7 @@
 {
     "name": "erdjs-vue-demo",
     "private": true,
-    "version": "0.9.5",
+    "version": "0.9.15",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "bootstrap": "^5.2.3",
-        "erdjs-vue": "^0.9.7",
+        "erdjs-vue": "^0.9.15",
         "vue": "^3.2.45",
         "vue-router": "^4.1.6"
     },

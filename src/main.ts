@@ -16,6 +16,14 @@ const erdjs = erdjsVue({
   chain: 'devnet',
 }, {
   walletConnectV2ProjectId: import.meta.env.VITE_VUE_APP_WC_PROJECT_ID || ''
+}, {
+  shouldUseWebViewProvider: true,
+  extensionLogin: {
+    nativeAuth: true
+  },
+  ledgerLogin: {
+    nativeAuth: true
+  }
 });
 app.use(erdjs);
 
